@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-container {
+    height: 100vh;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #FEAF00), color-stop(100%, #ddba6f));
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-form {
+    margin-top: 100px !important;
+    background-color: white;
+    height: 1000px;
+    border-radius: 8px;
+    padding-top: 26px;
+    font-family: 'Roboto', sans-serif;
+    padding: 23px;
+}
+
+.line {
+    position: absolute;
+    width: 39px;
+    height: 0px;
+    left: 742px;
+    top: 278px;
+
+    border: 4px solid #F8D442;
+    transform: rotate(90deg);
+}
+
+::placeholder {
+    font-size: 14px;
+}
+
+.sign-btn {
+    background-color: #FEAF00;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.link-reset a {
+    color: #FEAF00;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* .........Dashboard css............ */
+
+/* .dashboard-main{
+    background-color: rgb(230, 230, 230);
+} */
+
+.side-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #F2EAE1;
+    padding: 12px;
+}
+
+.line-dashboard {
+    position: absolute;
+    width: 32px;
+    height: 0px;
+    left: 23px;
+    top: 33px;
+
+    border: 3px solid #F8D442;
+    transform: rotate(90deg);
+}
+
+.user-img img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.nav-bar {
+    border-bottom: 2px solid grey;
+}
+
+nav ul li {
+    text-align: center;
+    border-radius: 4px;
+    padding-top: 7px;
+    height: 40px;
+    width: 170px;
+    margin: 28px;
+    list-style: none;
+}
+
+nav ul li:hover {
+    background-color: #FEAF00;
+
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-bar .fa {
+    font-size: 19px;
+}
+
+
+/*........Student section css......... */
+.d-student {
+    background: #F0F9FF;
+    border-radius: 12px;
+    height: 157px;
+    margin: 12px;
+}
+
+.d-student .fa {
+    color: #74C1ED;
+    font-size: 43px;
+    margin: 12px 0 0 12px;
+}
+
+.d-student p {
+    padding-top: 8px;
+    font-size: 14px;
+    padding-left: 12px;
+    font-weight: 500;
+}
+
+.d-student h4 {
+    float: right;
+    padding-top: 8px;
+    padding-right: 16px;
+}
+
+/*.... Course section CSS...... */
+
+.d-course {
+    border-radius: 12px;
+    background: #FEF6FB;
+    height: 157px;
+    margin: 12px;
+}
+
+.d-course .fa {
+    color: #EE95C5;
+    font-size: 43px;
+    margin: 12px 0 0 12px;
+}
+
+.d-course p {
+    padding-top: 8px;
+    font-size: 14px;
+    padding-left: 12px;
+    font-weight: 500;
+}
+
+.d-course h4 {
+    float: right;
+    padding-top: 8px;
+    padding-right: 16px;
+}
+
+
+/*.... Payment section CSS...... */
+
+.d-payment {
+    border-radius: 12px;
+    background: #FEFBEC;
+    height: 157px;
+    margin: 12px;
+}
+
+.d-payment .fa {
+    color: #F6C762;
+    font-size: 43px;
+    margin: 12px 0 0 12px;
+}
+
+.d-payment p {
+    padding-top: 8px;
+    font-size: 14px;
+    padding-left: 12px;
+    font-weight: 500;
+}
+
+.d-payment h4 {
+    float: right;
+    padding-top: 8px;
+    padding-right: 16px;
+}
+
+.d-payment h4 span {
+    font-size: 14px;
+}
+
+
+/*.... User section CSS...... */
+
+.d-user {
+    background: linear-gradient(110.42deg, #FEAF00 18.27%, #F8D442 91.84%);
+    border-radius: 12px;
+    height: 157px;
+    margin: 12px;
+}
+
+.d-user .fa {
+    color: #FFFFFF;
+    font-size: 43px;
+    margin: 12px 0 0 12px;
+}
+
+.d-user p {
+    padding-top: 8px;
+    font-size: 14px;
+    padding-left: 12px;
+    font-weight: 500;
+}
+
+.d-user h4 {
+    float: right;
+    padding-top: 8px;
+    padding-right: 16px;
+}
+
+
+/* ..........Table formate css........... */
+
+.fa-sort{
+    position: absolute;
+    left: 85.99%;
+    top: 8.45%;
+    font-size: 27px;
+    color: #FEAF00;
+}
+.fa-sort, 
+.fa-trash,
+.fa-pen {
+    color: #FEAF00;
+}
+
+.btn-primary {
+    background-color: #FEAF00 !important;
+    border: none;
+    padding: 12px;
+}
+.msg-border{
+    height:70vh;
+}
+.user-message {
+    /* Adjust these properties to decrease the size of the div */
+    font-size: 14px; /* Decrease the font size */
+    padding: 5px; /* Decrease the padding */
+    margin: 5px 0; /* Adjust the margin to control vertical spacing */
+    width:261px;
+}
