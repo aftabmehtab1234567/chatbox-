@@ -182,10 +182,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     echo "Receiver ID: " . $receiverId;
 
     // Fetch messages exchanged between the session user and the specific receiver in a chat conversation
-    $sql = "SELECT id, message_text, timestamp FROM `messages` WHERE 
-    (sender_id = {$sessionId} AND receiver_id = {$receiverId}) OR
-    (sender_id = {$sessionId} AND receiver_id = {$sessionId})
-   
+    $sql = "SELECT message_text, timestamp FROM `messages` WHERE 
+    ((sender_id = $sessionId AND receiver_id = $receiverId) OR (sender_id = $receiverId AND receiver_id = $sessionId))
     ORDER BY timestamp ASC";
 
     $result = $conn->query($sql);

@@ -70,6 +70,8 @@ function fetchMessages(receiverId) {
 
 
 
+
+
     // Initial fetch of messages
   
 
